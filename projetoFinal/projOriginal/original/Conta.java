@@ -1,9 +1,14 @@
-package etapa01;
+package projOriginal.original;
 
-abstract class Conta {
+ public class Conta {
     private int numeroConta;
     private double saldoConta;
 
+
+    public Conta (int numeroConta, double saldoConta) {
+        this.numeroConta = numeroConta;
+        this.saldoConta = saldoConta;
+    }
 
     public void mostrarDados(){ 
         System.out.println(numeroConta + " " + saldoConta);
@@ -21,14 +26,18 @@ abstract class Conta {
     }
 
 
-    public double getSaldo() {
+    public double getSaldoConta() {
         return saldoConta;
     }
     
-    public int getNumero() {
+    public int getNumeroConta() {
         return numeroConta;
+    }
+        @Override
+    public String  toString() {
+        return numeroConta + " - " + saldoConta + "-";
     }
 
 }
     
-}
+ 
