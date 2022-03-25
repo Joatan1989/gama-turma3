@@ -1,5 +1,5 @@
-create  database bdnewbank;
-use bdnewbank;
+create  database bdsmallbank;
+use bdsmallbank;
 create table tb_conta_corrente(
 numero integer not null,
 saldo double,
